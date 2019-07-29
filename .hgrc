@@ -1,0 +1,37 @@
+# example user config (see 'hg help config' for more info)
+[ui]
+# name and email, e.g.
+username = (your-username)
+
+# We recommend enabling tweakdefaults to get slight improvements to
+# the UI over time. Make sure to set HGPLAIN in the environment when
+# writing scripts!
+# tweakdefaults = True
+
+# uncomment to disable color in command output
+# (see 'hg help color' for details)
+# color = never
+
+# uncomment to disable command output pagination
+# (see 'hg help pager' for details)
+# paginate = never
+
+[extensions]
+# uncomment these lines to enable some popular extensions
+# (see 'hg help extensions' for more info)
+#
+# churn =
+
+[hostsecurity]
+
+disabletls10warning = false
+hg.localhost:minimumprotocol = tls1.3
+hg.localhost = 0c:34:98:d9:c0:86:5b:ef:14:10:fe:cf:65:c5:f1:b6:c3:45:fb:34
+push_ssl = true
+allow_push = true
+
+
+[web]
+cacerts = /xyz.pem
+
+
